@@ -10,6 +10,8 @@
     "format": "prettier --write \"./**/*.{ts,tsx,json,md}\""
   },
   "dependencies": {
+    "@fontsource/montserrat": "^4.5.13",
+    "@fontsource/sen": "^4.5.9",
     "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
