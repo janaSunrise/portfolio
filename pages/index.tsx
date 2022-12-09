@@ -1,3 +1,9 @@
+import {
+  TwitterLogoIcon,
+  GitHubLogoIcon,
+  EnvelopeClosedIcon
+} from '@radix-ui/react-icons';
+
 import { TechStack } from '../components/TechStack';
 
 const Home = () => {
@@ -19,6 +25,35 @@ const Home = () => {
         <br />
         researches, makes weird stuff, and writes.
       </p>
+
+      <div className="grid grid-flow-col w-36 mt-6 text-lg">
+        <a
+          href="https://twitter.com/JanaSunrise"
+          target="_blank"
+          rel="noreferrer"
+          className="transition duration-150 hover:opacity-80"
+        >
+          <TwitterLogoIcon className="w-6 h-6" />
+        </a>
+
+        <a
+          href="https://github.com/JanaSunrise"
+          target="_blank"
+          rel="noreferrer"
+          className="transition duration-150 hover:opacity-80"
+        >
+          <GitHubLogoIcon className="w-6 h-6" />
+        </a>
+
+        <button
+          className="transition duration-150 hover:opacity-80"
+          onClick={() =>
+            navigator.clipboard.writeText('warriordefenderz@gmail.com')
+          }
+        >
+          <EnvelopeClosedIcon className="w-6 h-6" />
+        </button>
+      </div>
 
       <div className="pb-5 mt-8">
         <h2 className="text-3xl font-semibold underline underline-offset-4 text-accent font-title">
