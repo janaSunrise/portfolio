@@ -1,4 +1,4 @@
-import '@fontsource/sen/';
+import '@fontsource/sen';
 import '@fontsource/montserrat';
 import '../styles/globals.css';
 

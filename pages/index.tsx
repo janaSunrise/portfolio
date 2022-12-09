@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
 import {
   TwitterLogoIcon,
   GitHubLogoIcon,
@@ -6,10 +9,24 @@ import {
 
 import { TechStack } from '../components/TechStack';
 
+import type { SpotifyPlaying } from '../types';
+import NowPlaying from '../components/NowPlaying';
+
 const Home = () => {
+  const [song, setSong] = useState<SpotifyPlaying>();
+
+   useEffect(() => {
+     const getSong = async () => {
+       const res = await axios.get('/api/spotify');
+       setSong(res.data);
+     };
+
+     getSong();
+   }, []);
+
   return (
     <div className="mx-16 md:mx-48 lg:mx-56 xl:mx-64">
-      <div className="mt-20">
+      <div className="mt-16">
         <h2 className="text-2xl font-bold text-gray-400 font-title">
           hey i am
         </h2>
@@ -18,7 +35,7 @@ const Home = () => {
         </h1>
       </div>
 
-      <p className="mt-6 text-lg font-medium text-accent-secondary">
+      <p className="mt-4 text-lg font-medium text-accent-secondary">
         sixteen. indian.
         <br />
         wizard, generalist, deviant, mostly water.
@@ -55,7 +72,9 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="pb-5 mt-8">
+      {song && <NowPlaying song={song} /> }
+
+      <div className="pb-5 mt-6">
         <h2 className="text-3xl font-semibold underline underline-offset-4 text-accent font-title">
           techstack;
         </h2>
