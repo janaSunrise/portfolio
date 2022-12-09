@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useQuery } from '@tanstack/react-query';
 
 import {
   TwitterLogoIcon,
@@ -9,20 +9,17 @@ import {
 
 import { TechStack } from '../components/TechStack';
 
-import type { SpotifyPlaying } from '../types';
 import NowPlaying from '../components/NowPlaying';
 
 const Home = () => {
-  const [song, setSong] = useState<SpotifyPlaying>();
+   const {data: song, error, isLoading} = useQuery({
+    queryKey: ['spotify'],
+    queryFn: async () => {
+      const res = await axios.get('/api/spotify');
 
-   useEffect(() => {
-     const getSong = async () => {
-       const res = await axios.get('/api/spotify');
-       setSong(res.data);
-     };
-
-     getSong();
-   }, []);
+      return res.data;
+    }
+   });
 
   return (
     <div className="mx-16 md:mx-48 lg:mx-56 xl:mx-64">
@@ -72,7 +69,7 @@ const Home = () => {
         </button>
       </div>
 
-      {song && <NowPlaying song={song} /> }
+      {!isLoading && !error && song && <NowPlaying song={song} />}
 
       <div className="pb-5 mt-6">
         <h2 className="text-3xl font-semibold underline underline-offset-4 text-accent font-title">
