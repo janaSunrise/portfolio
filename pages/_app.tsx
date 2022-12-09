@@ -1,5 +1,5 @@
-import '@fontsource/sen/'
-import '@fontsource/montserrat'
+import '@fontsource/sen/';
+import '@fontsource/montserrat';
 import '../styles/globals.css';
 
 import type { AppProps } from 'next/app';
