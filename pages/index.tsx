@@ -12,14 +12,18 @@ import { TechStack } from '../components/TechStack';
 import NowPlaying from '../components/NowPlaying';
 
 const Home = () => {
-   const {data: song, error, isLoading} = useQuery({
+  const {
+    data: song,
+    error,
+    isLoading
+  } = useQuery({
     queryKey: ['spotify'],
     queryFn: async () => {
       const res = await axios.get('/api/spotify');
 
       return res.data;
     }
-   });
+  });
 
   return (
     <div className="mx-16 md:mx-48 lg:mx-56 xl:mx-64">
