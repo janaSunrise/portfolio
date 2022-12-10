@@ -11,13 +11,13 @@ interface NowPlayingProps {
 
 const NowPlaying = ({ song }: NowPlayingProps) => {
   return (
-    <div className="flex flex-row max-w-sm p-4 mt-6 space-x-8 border rounded-md border-tertiary">
+    <div className="flex flex-row max-w-sm p-4 mt-4 space-x-8 border rounded-md border-tertiary">
       {song.image ? (
         <img
           src={song?.image}
           alt="Album art"
-          height={50}
-          width={100}
+          height={25}
+          width={75}
           className="rounded shadow-md"
         />
       ) : (
@@ -26,9 +26,12 @@ const NowPlaying = ({ song }: NowPlayingProps) => {
         </div>
       )}
 
-      <div className="flex flex-col space-y-4">
-        <p className="font-semibold">{song.name ?? 'Not playing'}</p>
-        {song.artist && <p className="text-sm">{song.artist}</p>}
+      <div className="flex flex-col space-y-4 max-w-full">
+        <div className="font-medium">
+          {song.name ?? 'Not playing'}
+          {' – '}
+          {song.artist ?? 'Spotify'}
+        </div>
         <Image src={SpotifyImage} alt="Spotify Logo" height={200} width={70} />
       </div>
     </div>
