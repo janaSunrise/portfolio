@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Suspense } from 'react';
 import { useQuery } from '@tanstack/react-query';
 
 import {
@@ -11,7 +12,6 @@ import { TechStack } from '../components/TechStack';
 
 import NowPlaying from '../components/NowPlaying';
 import Time from '../components/Time';
-import { Suspense } from 'react';
 
 const Home = () => {
   const {
