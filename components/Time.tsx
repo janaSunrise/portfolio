@@ -10,15 +10,13 @@ const Time = () => {
   }, []);
 
   return (
-    <div>
-      <p className="text-accent-secondary">
+    <div className="mt-4 text-accent-secondary">
         {date.toLocaleDateString('en-US', {
           day: 'numeric',
-          month: 'long',
+          month: 'short',
           year: 'numeric'
         })}{' '}
         · {date.toLocaleTimeString()}
-      </p>
     </div>
   );
 };

@@ -21,7 +21,7 @@ export class Spotify {
       `${this.clientId}:${this.clientSecret}`
     ).toString('base64');
 
-    const response = await axios.post(
+    const {data} = await axios.post(
       `${AUTH_URL}/api/token`,
       {
         grant_type: 'refresh_token',
@@ -35,7 +35,7 @@ export class Spotify {
       }
     );
 
-    return `Bearer ${response.data.access_token}`;
+    return `Bearer ${data.access_token}`;
   }
 
   public async getCurrentlyPlaying(): Promise<SpotifyPlaying> {
@@ -52,22 +52,21 @@ export class Spotify {
       return {} as SpotifyPlaying;
     }
 
-    const data = response.data;
+    const {currently_playing_type, item} = response.data;
 
-    if (data.currently_playing_type === 'track') {
+    if (currently_playing_type === 'track') {
       return {
-        name: data.item.name,
-        artist: data.item.artists[0].name,
-        image: data.item.album.images[1].url
+        name: item.name,
+        artist: item.artists[0].name,
+        image: item.album.images[1].url
       };
-    } else if (data.currently_playing_type === 'album') {
+    } else if (currently_playing_type === 'album') {
       return {
-        name: data.item.name,
-        artist: data.item.show.publisher,
-        image: data.item.images[1].url
+        name: item.name,
+        artist: item.show.publisher,
+        image: item.images[1].url
       };
     }
-    // since it's not any of the above
     else {
       return {} as SpotifyPlaying;
     }

@@ -9,7 +9,6 @@ import {
 } from '@radix-ui/react-icons';
 
 import { TechStack } from '../components/TechStack';
-
 import NowPlaying from '../components/NowPlaying';
 import Time from '../components/Time';
 
@@ -24,7 +23,8 @@ const Home = () => {
       const res = await axios.get('/api/spotify');
 
       return res.data;
-    }
+    },
+    refetchOnWindowFocus: true
   });
 
   return (
@@ -34,7 +34,7 @@ const Home = () => {
           <h2 className="text-2xl font-bold text-gray-400 font-title">
             hey i am
           </h2>
-          <h1 className="text-6xl font-bold text-accent font-title">
+          <h1 className="text-5xl font-bold text-accent font-title">
             sunrit jana
           </h1>
         </div>
@@ -47,7 +47,7 @@ const Home = () => {
           researches, makes weird stuff, and writes.
         </p>
 
-        <div className="grid grid-flow-col w-36 mt-6 text-lg">
+        <div className="grid grid-flow-col w-36 mt-4 text-lg">
           <a
             href="https://twitter.com/JanaSunrise"
             target="_blank"
@@ -76,15 +76,9 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="mt-4">
-          <Time />
-        </div>
-
+        <Time />
         {!isLoading && !error && song && <NowPlaying song={song} />}
-
-        <div className="pb-5 mt-6">
-          <TechStack />
-        </div>
+        <TechStack />
       </div>
     </Suspense>
   );

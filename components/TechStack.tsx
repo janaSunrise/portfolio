@@ -20,7 +20,7 @@ export const Tech = ({ name, elements }: TechStackProps) => {
 
 export const TechStack = () => {
   return (
-    <>
+    <div className="pb-5 mt-6">
       <h2 className="text-3xl font-semibold underline underline-offset-4 text-accent font-title">
         techstack;
       </h2>
@@ -41,6 +41,6 @@ export const TechStack = () => {
       />
       <Tech name="ml" elements={['tensorflow', 'pytorch', 'scikit-learn']} />
       <Tech name="others" elements={['docker', 'git', 'linux', 'ci/cd']} />
-    </>
+    </div>
   );
 };
