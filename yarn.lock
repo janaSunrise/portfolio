@@ -32,15 +32,15 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/montserrat@^4.5.13":
-  version "4.5.13"
-  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.13.tgz#58f12419c05e131b09ab17e9181aa24fb9c84b3a"
-  integrity sha512-/XlcNsMFjdWX4Away8Ax/4NgND8Ckk9gVDwgz1sfxF6h+gFHChLOV0IvPrUfCQjZ1F35igg+nR9bSxmjsYEskQ==
-
 "@fontsource/sen@^4.5.9":
   version "4.5.9"
   resolved "https://registry.yarnpkg.com/@fontsource/sen/-/sen-4.5.9.tgz#2a1bd456200b1bf6eed34e11a2862baf69dea451"
   integrity sha512-QN+pW9fq+XNQoVwjrzxlZELSMSaKxUHlFJ1NApNr8b/KyGvRAL+hNVMhT1jBamtzkcI09yiGq7hdnEfo66rFog==
+
+"@fontsource/sora@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/sora/-/sora-4.5.10.tgz#46554a5a7bbbaa16657398f4071523228c44064a"
+  integrity sha512-hArmXtMRBOXtvY7DzSr+v0hGvRSrpYXMNOLJK/U0AJjhdS23kir+13ZV79CjwMhwsm8dfIV+YWVGDWEvlUic/w==
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"

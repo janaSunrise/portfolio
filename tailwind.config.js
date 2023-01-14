@@ -6,8 +6,15 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['Sen', 'sans-serif'],
-      title: ['Montserrat', 'sans-serif']
+      title: ['Sora', 'sans-serif'],
+      sans: ['Sen', 'sans-serif']
+    },
+    fontWeight: {
+      normal: 600,
+    },
+    letterSpacing: {
+      // normal should have a bit more spacing
+      normal: '0.05em',
     },
     extend: {
       colors: {

@@ -4,7 +4,7 @@ import { DefaultSeo } from 'next-seo';
 import { config } from '../next-seo.config';
 
 import '@fontsource/sen';
-import '@fontsource/montserrat';
+import '@fontsource/sora';
 import '../styles/globals.css';
 
 import type { AppProps } from 'next/app';

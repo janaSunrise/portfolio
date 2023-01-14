@@ -11,12 +11,12 @@ const Time = () => {
 
   return (
     <div className="mt-4 text-accent-secondary">
-        {date.toLocaleDateString('en-US', {
-          day: 'numeric',
-          month: 'short',
-          year: 'numeric'
-        })}{' '}
-        · {date.toLocaleTimeString()}
+      {date.toLocaleDateString('en-US', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric'
+      })}{' '}
+      · {date.toLocaleTimeString()}
     </div>
   );
 };

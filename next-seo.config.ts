@@ -13,7 +13,7 @@ export const config = {
   openGraph: {
     locale: 'en_US',
     url: 'https://sunritjana.vercel.app',
-    title: 'Sunrit Jana',
+    title: 'Sunrit Jana'
   },
   twitter: {
     creator: '@JanaSunrise',

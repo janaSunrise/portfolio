@@ -21,7 +21,7 @@ export class Spotify {
       `${this.clientId}:${this.clientSecret}`
     ).toString('base64');
 
-    const {data} = await axios.post(
+    const { data } = await axios.post(
       `${AUTH_URL}/api/token`,
       {
         grant_type: 'refresh_token',
@@ -52,7 +52,7 @@ export class Spotify {
       return {} as SpotifyPlaying;
     }
 
-    const {currently_playing_type, item} = response.data;
+    const { currently_playing_type, item } = response.data;
 
     if (currently_playing_type === 'track') {
       return {
@@ -66,8 +66,7 @@ export class Spotify {
         artist: item.show.publisher,
         image: item.images[1].url
       };
-    }
-    else {
+    } else {
       return {} as SpotifyPlaying;
     }
   }
