@@ -16,7 +16,7 @@ const Time = () => {
         month: 'short',
         year: 'numeric'
       })}{' '}
-      · {date.toLocaleTimeString()}
+      • {date.toLocaleTimeString()}
     </div>
   );
 };
