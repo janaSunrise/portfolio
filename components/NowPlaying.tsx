@@ -1,9 +1,5 @@
-import Image from 'next/image';
-
 import { CircleBackslashIcon } from '@radix-ui/react-icons';
 import { BsSpotify } from "react-icons/bs";
-
-import SpotifyImage from '../public/spotify.png';
 
 import type { SpotifyPlaying } from '../types';
 
