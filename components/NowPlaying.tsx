@@ -11,7 +11,7 @@ interface NowPlayingProps {
 
 const NowPlaying = ({ song }: NowPlayingProps) => {
   return (
-    <div className="flex flex-row max-w-sm p-4 mt-4 space-x-8 border rounded-md border-tertiary">
+    <div className="flex flex-row max-w-sm p-4 mt-4 space-x-8 border rounded-md border-tertiary backdrop-blur-[4px] backdrop-filter">
       {song.image ? (
         <img
           src={song?.image}
