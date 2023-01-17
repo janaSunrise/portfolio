@@ -6,8 +6,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      title: ['Sora', 'sans-serif'],
-      sans: ['Sen', 'sans-serif']
+      title: ['Sen', 'sans-serif'],
+      sans: ['Sora', 'sans-serif']
     },
     fontWeight: {
       normal: 600,
