@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import type { SpotifyPlaying } from '../types';
+import type { SpotifyPlaying } from 'types';
 
 const AUTH_URL = 'https://accounts.spotify.com';
 const BASE_URL = 'https://api.spotify.com/v1/me';

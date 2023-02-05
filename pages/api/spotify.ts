@@ -1,8 +1,8 @@
-import { Spotify } from '../../lib/spotify';
+import { Spotify } from 'lib/spotify';
 
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import type { SpotifyPlaying } from '../../types';
+import type { SpotifyPlaying } from 'types';
 
 const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID as string;
 const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET as string;

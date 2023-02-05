@@ -8,9 +8,9 @@ import {
   EnvelopeClosedIcon
 } from '@radix-ui/react-icons';
 
-import { TechStack } from '../components/TechStack';
-import NowPlaying from '../components/NowPlaying';
-import Time from '../components/Time';
+import { TechStack } from 'components/TechStack';
+import NowPlaying from 'components/NowPlaying';
+import Time from 'components/Time';
 
 const Home = () => {
   const {
@@ -20,9 +20,9 @@ const Home = () => {
   } = useQuery({
     queryKey: ['spotify'],
     queryFn: async () => {
-      const res = await axios.get('/api/spotify');
+      const { data } = await axios.get('/api/spotify');
 
-      return res.data;
+      return data;
     },
     refetchOnWindowFocus: true
   });
@@ -31,15 +31,15 @@ const Home = () => {
     <Suspense fallback={null}>
       <div className="mx-16 md:mx-48 lg:mx-56 xl:mx-64">
         <div className="mt-16">
-          <h2 className="text-2xl font-bold text-gray-400 font-title">
+          <h2 className="text-xl font-bold text-gray-400 font-title">
             hey i am
           </h2>
-          <h1 className="text-5xl font-bold text-accent font-title">
+          <h1 className="text-4xl font-bold text-accent font-title">
             sunrit jana
           </h1>
         </div>
 
-        <p className="mt-4 text-lg font-medium text-accent-secondary">
+        <p className="mt-2 text-md font-medium text-accent-secondary">
           sixteen. indian.
           <br />
           wizard, generalist, deviant, mostly water.

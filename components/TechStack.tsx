@@ -5,12 +5,12 @@ interface TechStackProps {
 
 export const Tech = ({ name, elements }: TechStackProps) => {
   return (
-    <div className="flex flex-wrap mt-2 space-x-2 text-xl text-accent-secondary">
-      <h3 className="font-normal text-accent">{name}:</h3>
+    <div className="flex flex-wrap mt-2 space-x-2 text-lg text-accent-secondary">
+      <h3 className="font-normal text-accent text-md">{name}:</h3>
       {elements.map((element, index) => (
         <div key={index}>
           <p>
-            {element} {index < elements.length - 1 && '•'}
+            {element}{index < elements.length - 1 && ','}
           </p>
         </div>
       ))}
@@ -20,8 +20,8 @@ export const Tech = ({ name, elements }: TechStackProps) => {
 
 export const TechStack = () => {
   return (
-    <div className="pb-5 mt-6">
-      <h2 className="text-3xl font-semibold underline underline-offset-4 text-accent font-title">
+    <div className="pb-5 mt-4">
+      <h2 className="text-2xl font-semibold underline underline-offset-4 text-accent font-title">
         techstack;
       </h2>
 
