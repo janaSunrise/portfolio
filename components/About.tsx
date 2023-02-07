@@ -10,7 +10,7 @@ const About = () => {
         <br /> <br />
         all i do is research, make weird stuff, and write.
         <br /> <br />
-        you&apos;ll mostly learning smth, hacking on cool projects, or automating stuff for hours.
+        you&apos;ll mostly find me learning smth, hacking on cool projects, or automating stuff for hours.
       </p>
 
       <h4 className="mt-4 text-lg font-semibold text-accent font-title">now</h4>
