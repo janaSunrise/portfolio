@@ -1,9 +1,10 @@
 export const config = {
   title: 'Sunrit Jana',
+  description: 'Full-stack and Machine learning engineer',
   additionalMetaTags: [
     {
       property: 'keywords',
-      content: 'sunrit'
+      content: 'sunrit, sunritjana, portfolio'
     },
     {
       property: 'color-scheme',
@@ -13,7 +14,8 @@ export const config = {
   openGraph: {
     locale: 'en_US',
     url: 'https://sunritjana.vercel.app',
-    title: 'Sunrit Jana'
+    title: 'Sunrit Jana',
+    description: 'Full-stack and Machine learning engineer',
   },
   twitter: {
     creator: '@JanaSunrise',
