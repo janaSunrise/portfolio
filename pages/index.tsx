@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 
 import {
@@ -11,8 +11,19 @@ import {
 import { TechStack } from 'components/TechStack';
 import NowPlaying from 'components/NowPlaying';
 import Time from 'components/Time';
+import About from 'components/About';
+import Navbar from 'components/Navbar';
+
+import type { contentDisplay } from 'types';
+
+const CONTENT_MAP: Record<contentDisplay, JSX.Element> = {
+  'home': <About />,
+  'tech': <TechStack />,
+}
 
 const Home = () => {
+  const [content, setContent] = useState<contentDisplay>('home');
+
   const {
     data: song,
     error,
@@ -29,22 +40,24 @@ const Home = () => {
 
   return (
     <Suspense fallback={null}>
-      <div className="mx-16 md:mx-48 lg:mx-56 xl:mx-64">
-        <div className="mt-16">
+      <>
+        <Navbar setDisplay={setContent} />
+
+        <div className="mt-6">
           <h2 className="text-xl font-bold text-gray-400 font-title">
-            hey i am
+            hey i am,
           </h2>
-          <h1 className="text-4xl font-bold text-accent font-title">
+          <h1 className="text-5xl font-bold text-accent font-title">
             sunrit jana
           </h1>
         </div>
 
         <p className="mt-2 text-md font-medium text-accent-secondary">
-          sixteen. indian.
-          <br />
-          wizard, generalist, deviant, mostly water.
-          <br />
-          researches, makes weird stuff, and writes.
+          Full-stack & ML engineer w/ a passion for building things.
+        </p>
+
+        <p className="mt-2 text-md font-medium text-accent-secondary">
+          sixteen. indian. wizard, generalist, deviant, mostly water.
         </p>
 
         <div className="grid grid-flow-col w-36 mt-4 text-lg">
@@ -78,8 +91,8 @@ const Home = () => {
 
         <Time />
         {!isLoading && !error && song && <NowPlaying song={song} />}
-        <TechStack />
-      </div>
+        {CONTENT_MAP[content]}
+      </>
     </Suspense>
   );
 };

@@ -13,11 +13,11 @@ const queryClient = new QueryClient();
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className="mx-12 md:mx-48 lg:mx-56 xl:mx-64">
       <DefaultSeo {...config} />
       <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />
       </QueryClientProvider>
-    </>
+    </div>
   );
 }
