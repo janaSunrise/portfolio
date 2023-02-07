@@ -10,7 +10,8 @@ export const Tech = ({ name, elements }: TechStackProps) => {
       {elements.map((element, index) => (
         <div key={index}>
           <p>
-            {element}{index < elements.length - 1 && ','}
+            {element}
+            {index < elements.length - 1 && ','}
           </p>
         </div>
       ))}
