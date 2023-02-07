@@ -53,11 +53,11 @@ const Home = () => {
         </div>
 
         <p className="mt-2 text-md font-medium text-accent-secondary">
-          full-stack & ML engineer w/ a passion for building things.
-        </p>
-
-        <p className="mt-2 text-md font-medium text-accent-secondary">
-          sixteen. indian. wizard, generalist, deviant, mostly water.
+          sixteen. indian.
+          <br />
+          full-stack & ML engineer.
+          <br />
+          wizard, generalist, deviant, mostly water.
         </p>
 
         <div className="grid grid-flow-col w-36 mt-4 text-lg">

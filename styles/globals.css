@@ -18,7 +18,7 @@ a {
 }
 
 body {
-  background: #111827;
+  background: fixed 0 0 / 20px 20px radial-gradient(#313131 1px, transparent 0);
 
   @apply bg-primary text-accent;
 }
