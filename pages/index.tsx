@@ -57,7 +57,7 @@ const Home = () => {
         </p>
 
         <p className="mt-2 text-md font-medium text-accent-secondary">
-          sixteen. indian. wizard, generalist, deviant, mostly water.
+          Sixteen. Indian. Wizard, generalist, deviant, mostly water.
         </p>
 
         <div className="grid grid-flow-col w-36 mt-4 text-lg">
