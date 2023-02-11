@@ -29,17 +29,19 @@ const Home = () => {
 
       <div className="mt-6">
         <h2 className="text-xl font-bold text-gray-400 font-title">
-          hey! i am,
+          Hey! I am,
         </h2>
         <h1 className="text-4xl md:text-5xl font-bold text-accent font-title">
-          sunrit jana
+          Sunrit Jana
         </h1>
       </div>
 
       <p className="mt-2 text-md font-medium text-accent-secondary">
-        full-stack & ML engineer.
+        Full-stack & ML engineer.
         <br />
-        wizard, generalist, deviant, mostly water.
+        Wizard, generalist, deviant, mostly water.
+        <br />
+        Researches, makes weird stuff, and writes.
       </p>
 
       <div className="grid grid-flow-col w-36 mt-4 text-lg">

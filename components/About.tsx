@@ -6,20 +6,20 @@ const About = () => {
       </h2>
 
       <p className="mt-2 text-md text-accent-secondary max-w-3xl">
-        living in the moment and building cool stuff as i get ideas.
+        Living in the moment and building cool stuff as I get ideas.
         <br />
-        all i do is research, make weird stuff, and write.
+        Turning gears in code and writing about it.
         <br />
-        you&apos;ll mostly find me learning smth, hacking on cool projects, or
+        You&apos;ll mostly find me learning smth, hacking on cool projects, or
         automating stuff for hours.
       </p>
 
       <h4 className="mt-4 text-lg font-semibold text-accent font-title">now</h4>
 
       <ul className="mt-2 text-md text-accent-secondary list-disc">
-        <li>attempting to graduate highschool while remaining unfazed</li>
-        <li>exploring low-level systems and networking</li>
-        <li>reading books, writing as i get time and gaining clarity.</li>
+        <li>Attempting to graduate highschool while remaining unfazed</li>
+        <li>Exploring low-level systems and networking</li>
+        <li>Reading books, writing as i get time and gaining clarity.</li>
       </ul>
     </div>
   );
