@@ -22,7 +22,7 @@ export const Tech = ({ name, elements }: TechStackProps) => {
 export const TechStack = () => {
   return (
     <div className="pb-5 mt-4">
-      <h2 className="text-2xl font-semibold underline underline-offset-4 text-accent font-title">
+      <h2 className="text-xl font-semibold underline underline-offset-4 text-accent font-title">
         techstack;
       </h2>
 

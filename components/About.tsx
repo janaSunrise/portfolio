@@ -1,15 +1,15 @@
 const About = () => {
   return (
     <div className="mt-4 pb-4">
-      <h2 className="text-2xl font-semibold underline underline-offset-4 text-accent font-title">
+      <h2 className="text-xl font-semibold underline underline-offset-4 text-accent font-title">
         about;
       </h2>
 
       <p className="mt-2 text-md text-accent-secondary max-w-3xl">
         living in the moment and building cool stuff as i get ideas.
-        <br /> <br />
+        <br />
         all i do is research, make weird stuff, and write.
-        <br /> <br />
+        <br />
         you&apos;ll mostly find me learning smth, hacking on cool projects, or
         automating stuff for hours.
       </p>

@@ -1,6 +1,6 @@
 export const config = {
   title: 'Sunrit Jana',
-  description: 'Full-stack and Machine learning engineer',
+  description: 'Full-stack and machine learning engineer',
   additionalMetaTags: [
     {
       property: 'keywords',
@@ -15,7 +15,7 @@ export const config = {
     locale: 'en_US',
     url: 'https://sunritjana.vercel.app',
     title: 'Sunrit Jana',
-    description: 'Full-stack and Machine learning engineer',
+    description: 'Full-stack and machine learning engineer'
   },
   twitter: {
     creator: '@JanaSunrise',

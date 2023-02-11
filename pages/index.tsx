@@ -11,6 +11,7 @@ import NowPlaying from 'components/NowPlaying';
 import Time from 'components/Time';
 import About from 'components/About';
 import Navbar from 'components/Navbar';
+import Footer from 'components/Footer';
 
 import type { contentDisplay } from 'types';
 
@@ -28,16 +29,14 @@ const Home = () => {
 
       <div className="mt-6">
         <h2 className="text-xl font-bold text-gray-400 font-title">
-          hey i am,
+          hey! i am,
         </h2>
-        <h1 className="text-5xl font-bold text-accent font-title">
+        <h1 className="text-4xl md:text-5xl font-bold text-accent font-title">
           sunrit jana
         </h1>
       </div>
 
       <p className="mt-2 text-md font-medium text-accent-secondary">
-        sixteen. indian.
-        <br />
         full-stack & ML engineer.
         <br />
         wizard, generalist, deviant, mostly water.
@@ -81,6 +80,8 @@ const Home = () => {
       </div>
 
       {CONTENT_MAP[content]}
+
+      <Footer />
     </>
   );
 };
