@@ -3,8 +3,8 @@ import { DefaultSeo } from 'next-seo';
 
 import { config } from 'next-seo.config';
 
-import '@fontsource/sen';
 import '@fontsource/sora';
+import '@fontsource/dm-sans';
 import 'styles/globals.css';
 
 import type { AppProps } from 'next/app';

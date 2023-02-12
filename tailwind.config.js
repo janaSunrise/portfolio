@@ -6,15 +6,15 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      title: ['Sora', 'sans-serif'],
-      sans: ['Sen', 'sans-serif']
+      title: ['DM Sans', 'sans-serif'],
+      sans: ['Sora', 'sans-serif']
     },
     fontWeight: {
-      normal: 600,
+      normal: 600
     },
     letterSpacing: {
       // normal should have a bit more spacing
-      normal: '0.05em',
+      normal: '0.05em'
     },
     extend: {
       colors: {
@@ -22,7 +22,7 @@ module.exports = {
         secondary: '#131313',
         tertiary: '#222222',
         accent: '#f3f3f3',
-        'accent-secondary': '#b5b5b5'
+        'accent-secondary': '#9ca3af'
       }
     }
   },

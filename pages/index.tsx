@@ -1,17 +1,12 @@
 import { useState } from 'react';
 
-import {
-  TwitterLogoIcon,
-  GitHubLogoIcon,
-  EnvelopeClosedIcon
-} from '@radix-ui/react-icons';
-
 import { TechStack } from 'components/TechStack';
 import NowPlaying from 'components/NowPlaying';
 import Time from 'components/Time';
 import About from 'components/About';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
+import Socials from 'components/Socials';
 
 import type { contentDisplay } from 'types';
 
@@ -44,33 +39,8 @@ const Home = () => {
         Researches, makes weird stuff, and writes.
       </p>
 
-      <div className="grid grid-flow-col w-36 mt-4 text-lg">
-        <a
-          href="https://twitter.com/JanaSunrise"
-          target="_blank"
-          rel="noreferrer"
-          className="transition duration-150 hover:opacity-80"
-        >
-          <TwitterLogoIcon className="w-6 h-6" />
-        </a>
-
-        <a
-          href="https://github.com/JanaSunrise"
-          target="_blank"
-          rel="noreferrer"
-          className="transition duration-150 hover:opacity-80"
-        >
-          <GitHubLogoIcon className="w-6 h-6" />
-        </a>
-
-        <button
-          className="transition duration-150 hover:opacity-80"
-          onClick={() =>
-            navigator.clipboard.writeText('warriordefenderz@gmail.com')
-          }
-        >
-          <EnvelopeClosedIcon className="w-6 h-6" />
-        </button>
+      <div className="my-4">
+        <Socials />
       </div>
 
       <div className="grid my-4 gap-2">
