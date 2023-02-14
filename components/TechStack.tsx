@@ -5,7 +5,7 @@ interface TechStackProps {
 
 export const Tech = ({ name, elements }: TechStackProps) => {
   return (
-    <div className="flex flex-wrap mt-2 space-x-2 text-lg text-accent-secondary">
+    <div className="flex flex-wrap mt-1 space-x-2 text-lg text-accent-secondary">
       <h3 className="text-accent text-md">{name}:</h3>
       {elements.map((element, index) => (
         <div key={index}>

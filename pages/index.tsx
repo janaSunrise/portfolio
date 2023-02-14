@@ -20,23 +20,23 @@ const Home = () => {
 
   return (
     <>
-      <Navbar setDisplay={setContent} />
+      <Navbar setContent={setContent} />
 
-      <div className="mt-6">
-        <h2 className="text-xl font-bold text-gray-400 font-title">
-          Hey! I am,
-        </h2>
-        <h1 className="text-4xl md:text-5xl font-bold text-accent font-title">
+      <div className="mt-4">
+        <h2 className="text-2xl font-bold text-gray-400 font-title my-2">
           Sunrit Jana
+        </h2>
+        <h1 className="text-3xl md:text-4xl font-bold text-accent font-title">
+          ML engineer helping
+          <span className="text-yellow-400"> robots take over the world.</span>
         </h1>
       </div>
 
-      <p className="mt-2 text-md font-medium text-accent-secondary">
-        Full-stack & ML engineer.
+      <p className="my-4 text-md font-medium text-accent-secondary">
+        Full-stack engineer who researches, makes weird stuff online, and
+        writes.
         <br />
-        Wizard, generalist, deviant, mostly water.
-        <br />
-        Researches, makes weird stuff, and writes.
+        Wizard, generalist, deviant, but mostly water.
       </p>
 
       <div className="my-4">

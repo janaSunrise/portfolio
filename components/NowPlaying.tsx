@@ -21,8 +21,6 @@ const NowPlaying = () => {
     refetchOnWindowFocus: true
   });
 
-  console.log(song);
-
   if (error || isLoading) return null;
 
   return (

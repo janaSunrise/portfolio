@@ -2,20 +2,20 @@ import type { Dispatch, SetStateAction } from 'react';
 import type { contentDisplay } from 'types';
 
 const buttonClass =
-  'text-white focus:outline-none focus:ring-1 font-medium rounded-lg text-sm px-2 py-2 mr-2 focus:ring-gray-700 border-gray-700';
+  'text-white focus:outline-none font-medium rounded-lg text-md py-2 focus:ring-gray-700 border-gray-700 hover:text-yellow-400';
 
 interface Props {
-  setDisplay: Dispatch<SetStateAction<contentDisplay>>;
+  setContent: Dispatch<SetStateAction<contentDisplay>>;
 }
 
-const Navbar = ({ setDisplay }: Props) => {
+const Navbar = ({ setContent }: Props) => {
   return (
     <nav className="flex mt-8 space-x-4">
-      <button className={buttonClass} onClick={() => setDisplay('home')}>
-        /home
+      <button className={buttonClass} onClick={() => setContent('home')}>
+        home
       </button>
-      <button className={buttonClass} onClick={() => setDisplay('tech')}>
-        /tech-stack
+      <button className={buttonClass} onClick={() => setContent('tech')}>
+        tech-stack
       </button>
     </nav>
   );

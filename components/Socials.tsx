@@ -1,5 +1,8 @@
 import { socials } from 'data/socials';
 
+const elementClass =
+  'transition ease-linear duration-200 hover:text-yellow-500';
+
 const Socials = () => {
   return (
     <div className="grid grid-flow-col w-36 text-lg">
@@ -7,7 +10,7 @@ const Socials = () => {
         copy ? (
           <button
             key={name}
-            className="transition duration-150 hover:opacity-80"
+            className={elementClass}
             onClick={() => navigator.clipboard.writeText(url)}
           >
             {icon}
@@ -18,7 +21,7 @@ const Socials = () => {
             href={url}
             target="_blank"
             rel="noreferrer"
-            className="transition duration-150 hover:opacity-80"
+            className={elementClass}
           >
             {icon}
           </a>

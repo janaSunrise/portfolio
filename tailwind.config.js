@@ -22,7 +22,7 @@ module.exports = {
         secondary: '#131313',
         tertiary: '#222222',
         accent: '#f3f3f3',
-        'accent-secondary': '#9ca3af'
+        'accent-secondary': '#a1a1aa'
       }
     }
   },

@@ -11,9 +11,12 @@ import type { AppProps } from 'next/app';
 
 const queryClient = new QueryClient();
 
+// 3:12:14:16
+// 12:48:56:64
+// 8:32:48:64
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="mx-16 md:mx-64 lg:mx-72 xl:mx-80">
+    <div className="mx-8 md:mx-32 lg:mx-40 xl:mx-48">
       <DefaultSeo {...config} />
       <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />
