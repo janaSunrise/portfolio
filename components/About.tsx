@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div className="mt-4 pb-4">
       <h2 className="text-xl font-semibold underline underline-offset-4 text-accent font-title">
-        about;
+        About
       </h2>
 
       <p className="mt-2 text-md text-accent-secondary max-w-3xl">
@@ -21,7 +21,7 @@ const About = () => {
       <ul className="mt-1 text-md text-accent-secondary list-disc pl-4">
         <li>Attempting to graduate highschool while remaining unfazed</li>
         <li>Exploring low-level systems and networking</li>
-        <li>Reading books, writing as i get time and gaining clarity.</li>
+        <li>Reading books, writing as I get time and seeking clarity</li>
       </ul>
     </div>
   );

@@ -8,7 +8,7 @@ const Footer = () => {
         <p>Crafted with ❤️ by Sunrit</p>
         <p className="hidden md:flex">•</p>
         <p>
-          Open-source at{' '}
+          Open source at{' '}
           <a
             className="transition duration-150 hover:text-yellow-500"
             href={GITHUB_REPO}

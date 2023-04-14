@@ -2,7 +2,7 @@ import type { Dispatch, SetStateAction } from 'react';
 import type { contentDisplay } from 'types';
 
 const buttonClass =
-  'text-white focus:outline-none font-medium rounded-lg text-md py-2 focus:ring-gray-700 border-gray-700 hover:text-yellow-400';
+  'text-white focus:outline-none font-medium rounded-lg text-md py-2 focus:ring-gray-700 border-gray-700 hover:text-yellow-400 transition ease-linear duration-200';
 
 interface Props {
   setContent: Dispatch<SetStateAction<contentDisplay>>;

@@ -33,8 +33,7 @@ const Home = () => {
       </div>
 
       <p className="my-4 text-md font-medium text-accent-secondary">
-        Full-stack engineer who researches, makes weird stuff online, and
-        writes.
+        Full-stack engineer who researches, builds weird stuff, and writes.
         <br />
         Wizard, generalist, deviant, but mostly water.
       </p>
@@ -43,7 +42,7 @@ const Home = () => {
         <Socials />
       </div>
 
-      <div className="grid my-4 gap-2">
+      <div className="my-4">
         <Time />
       </div>
 

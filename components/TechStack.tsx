@@ -23,7 +23,7 @@ export const TechStack = () => {
   return (
     <div className="pb-5 mt-4">
       <h2 className="text-xl font-semibold underline underline-offset-4 text-accent font-title">
-        techstack;
+        Tech Stack
       </h2>
 
       <Tech name="languages" elements={['python', 'typescript', 'rust']} />
